@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/questionsFragment">
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.example.planetquiz.QuestionsFragment"
+        android:label="Planet Quiz">
+        <action
+            android:id="@+id/action_questionsFragment_to_answersFragment"
+            app:destination="@id/answersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/answersFragment"
+        android:name="com.example.planetquiz.AnswersFragment"
+        android:label="Planet Quiz" />
+</navigation>
